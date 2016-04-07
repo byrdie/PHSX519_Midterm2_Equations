@@ -1,0 +1,115 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[10pt]{article}
+ 
+\usepackage[margin=.60in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, mathtools}
+\usepackage{multicol}
+\usepackage[subnum]{cases}
+\usepackage{relsize}
+\usepackage[makeroom]{cancel}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{calligra}
+\usepackage[normalem]{ulem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n} 
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+
+
+% Makes '\sr' make a script r
+\newcommand{\sr}{\ensuremath{\mathcalligra{r}}}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\ihat}{\boldsymbol{\hat{\textbf{\i}}}}
+\newcommand{\jhat}{\boldsymbol{\hat{\textbf{\j}}}}
+\newcommand{\khat}{\boldsymbol{\hat{\textbf{k}}}}
+\newcommand{\rhat}{\boldsymbol{\hat{\textbf{r}}}}
+\newcommand{\srhat}{\boldsymbol{\hat{\textbf{\sr}}}}
+\newcommand{\xhat}{\boldsymbol{\hat{\textbf{x}}}}
+\newcommand{\yhat}{\boldsymbol{\hat{\textbf{y}}}}
+\newcommand{\zhat}{\boldsymbol{\hat{\textbf{z}}}}
+\newcommand{\nhat}{\boldsymbol{\hat{\textbf{n}}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\textbf{$\phi$}}}}
+
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\vc}[1]{\mathbf{#1}}
+\newcommand{\fracl}[2]{\mathlarger{\frac{#1}{#2}}}
+\newcommand{\dd}{\, \mathrm{d}}
+\newcommand{\eo}{\epsilon_0}
+\newcommand{\mo}{\mu_\circ}
+\newcommand{\tder}[2]{\frac{\dd #1}{\dd #2}}
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\dtder}[2]{\frac{\dd^2 #1}{\dd #2^2}}
+\newcommand{\dpder}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\intas}{ \int_{-\infty}^\infty}
+\newcommand{\wt}[1]{\widetilde{#1}}
+\newcommand{\ev}[1]{\left\langle #1 \right\rangle}
+\newcommand{\ce}{\wt{\vect{E}}}
+\newcommand{\cb}{\wt{\vect{B}}}
+\newcommand{\K}{\frac{1}{4 \pi \eo}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+\pagestyle{fancy}
+\lhead{Midterm 2 Equations}
+\chead{PHSX519 Electromagnetic Theory I}
+\rhead{Roy Smart}
+
+ 
+\begin{document}
+\begin{multicols}{2}
+	\begin{align}	
+		&q = \int \rho(\vect{x}') \; d^3x'	\tag*{Monopole (4.4)} \\
+		&\vect{p} = \int \vect{x}' \rho(\vect{x}') \; d^3x'	\tag*{Dipole (4.8)} \\
+		&Q_{ij} = \int (3 x_i' x_j'- r' \delta_{ij})\rho(\vect{x}') d^3x'		\tag*{Quadrupole (4.9)} \\
+		&\Phi(\vect{x}) = \K \left[ \frac{q}{r} + \frac{ \vect{p} \cdot \vect{x}}{r^3} + \frac{1}{2} \sum_{i,j} Q_{ij} \frac{x_i x_j}{r^5} + ... \right] \tag*{Multipole Expansion (4.10)} \\
+		& E_r=\frac{2 p \cos \theta}{4 \pi \eo}, \quad E_\theta=\frac{2 p \sin \theta}{4 \pi \eo} \tag*{Dipole in $\zhat$ (4.12)} \\
+		& \vect{E}(\vect{x}) = \frac{3 \vect{n}(\vect{p} \cdot \vect{n}) - \vect{p}}{4 \pi \eo |\vect{x} - \vect{x}_0|^3} \tag*{$\vect{E}$-field due to dipole $\vect{p}$ (4.13)} \\
+		& W = \int \rho(\vect{x}) \Phi(\vect{x})\; d^3x \tag*{Charge in \textit{external} field (4.21)} \\
+		& W = q \Phi(0) - \vect{p} \cdot \vect{E}(0) - \frac{1}{6} \sum_i \sum_j Q_{ij} \pder{E_j}{x_i}(0) + ... \tag*{Energy multipole expansion (4.24)} \\
+		& \vect{P}(\vect{x}) = \sum_i N_i \ev{\vect{p}_i} \tag*{Electric polarization (4.28)} \\
+		& \vect{D} = \eo \vect{E} + \vect{P} \tag*{Electric displacement(4.34)} \\
+		& \vect{P} = \eo \chi_e \vect{E} \tag*{Induced polarization (4.36)} \\
+		& \vect{D} = \epsilon \vect{E} \tag*{Electric displacement (4.37)} \\
+		& \epsilon = \eo (1 + \chi_e) \tag*{Electric permittivity (4.38)} \\
+		& \begin{cases}
+			(\vect{D}_2 - \vect{D}_1) \cdot \vect{n}_{21} = \sigma \\
+			(\vect{E}_2 - \vect{E}_1 \times \vect{n}_{21}) = 0 \\
+		\end{cases}	\tag*{Boundary conditions (4.40)} \\
+		\begin{split}
+			&\Phi_{\text{in}} = - \left( \frac{3}{\epsilon/\eo + 2} \right) E_0 r \cos \theta \\ 
+			&\Phi_{\text{out}} = - E_0 r \cos \theta + \left( \frac{\epsilon/\eo - 1}{\epsilon/\eo + 2} \right) E_0 \frac{a^3}{r^2} \cos \theta 
+		\end{split} \tag*{Dielectric sphere in uniform $\vect{E}$-field (4.54)} \\
+		& W = \frac{1}{2} \int \vect{E} \cdot \vect{D} \; d^3x \tag*{Electrostatic Energy (4.89)} \\
+		& W = - \frac{1}{2} \int_{V_1} \vect{P} \cdot \vect{E}_0 \; d^3 x \tag*{Dielectric placed in $\vect{E}_0$ (4.93)}
+	\end{align}
+\end{multicols}
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+ 
+\end{document}
