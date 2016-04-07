@@ -39,7 +39,7 @@
 \newcommand{\nhat}{\boldsymbol{\hat{\textbf{n}}}}
 \newcommand{\phihat}{\boldsymbol{\hat{\textbf{$\phi$}}}}
 
-\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\vect}[1]{\boldsymbol{\mathbf{#1}}}
 \newcommand{\vc}[1]{\mathbf{#1}}
 \newcommand{\fracl}[2]{\mathlarger{\frac{#1}{#2}}}
 \newcommand{\dd}{\, \mathrm{d}}
@@ -105,7 +105,15 @@
 			&\Phi_{\text{out}} = - E_0 r \cos \theta + \left( \frac{\epsilon/\eo - 1}{\epsilon/\eo + 2} \right) E_0 \frac{a^3}{r^2} \cos \theta 
 		\end{split} \tag*{Dielectric sphere in uniform $\vect{E}$-field (4.54)} \\
 		& W = \frac{1}{2} \int \vect{E} \cdot \vect{D} \; d^3x \tag*{Electrostatic Energy (4.89)} \\
-		& W = - \frac{1}{2} \int_{V_1} \vect{P} \cdot \vect{E}_0 \; d^3 x \tag*{Dielectric placed in $\vect{E}_0$ (4.93)}
+		& W = - \frac{1}{2} \int_{V_1} \vect{P} \cdot \vect{E}_0 \; d^3 x \tag*{Dielectric placed in $\vect{E}_0$ (4.93)} \\
+		& \vect{N} = \vect{\mu} \times \vect{B} \tag*{Torque on magnetic dipole moment (5.1)} \\
+		& \nabla \cdot \vect{J} = 0 \tag*{Condition of magnetostatics (5.3)} \\
+		& d \vect{B} = k I \frac{d \vect{l} \times \vect{x}}{|\vect{x}|^3} \tag*{Biot-Savart Law (5.4)} \\
+		& \vect{F} = \int \vect{J}(\vect{x}) \times \vect{B}(\vect{x}) \; d^3 x \tag*{Force on current dist. (5.12)} \\
+		& \vect{N} = \int \vect{x} \times (\vect{J} \times \vect{B}) \; d^3 x \tag*{Torque on current dist. (5.13)} \\
+		& \oint_C \vect{B} \cdot d \vect{l} = \mu_0 I \tag*{Amp\`eres law (5.25)}\\
+		& \vect{B}(\vect{x}) = \nabla \times \vect{A}(\vect{x}) \tag*{Magnetic vector potential (5.27)} \\
+		& \vect{A}(\vect{x}) = \frac{\mu_0}{4 \pi} \int \frac{\vect{J}(\vect{x}')}{|\vect{x}-\vect{x}'|} d^3 x' \tag*{MVP from current dist. (5.32)} \\
 	\end{align}
 \end{multicols}
 % --------------------------------------------------------------
