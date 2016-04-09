@@ -5,7 +5,7 @@
  
 \documentclass[10pt]{article}
  
-\usepackage[margin=.60in]{geometry} 
+\usepackage[margin=.6in]{geometry} 
 \usepackage{amsmath,amsthm,amssymb, mathtools}
 \usepackage{multicol}
 \usepackage[subnum]{cases}
@@ -18,6 +18,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{fancyhdr}
+\usepackage{mathrsfs}
 
 \DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n} 
 \DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
@@ -79,18 +80,41 @@
 \chead{PHSX519 Electromagnetic Theory I}
 \rhead{Roy Smart}
 
+
  
 \begin{document}
+\setlength{\abovedisplayskip}{-25pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
 \begin{multicols}{2}
-	\begin{align}	
-		&q = \int \rho(\vect{x}') \; d^3x'	\tag*{Monopole (4.4)} \\
-		&\vect{p} = \int \vect{x}' \rho(\vect{x}') \; d^3x'	\tag*{Dipole (4.8)} \\
-		&Q_{ij} = \int (3 x_i' x_j'- r' \delta_{ij})\rho(\vect{x}') d^3x'		\tag*{Quadrupole (4.9)} \\
+	\tiny
+	\begin{align*}
+		& \vect{E}(\vect{x}) = \frac{1}{4 \pi \eo} \int \rho(\vect{x}') \frac{\vect{x} - \vect{x}'}{|\vect{x} - \vect{x}'|^3} d^3x' \tag*{Coulomb's Law (1.5)} \\
+		& \delta(f(x)) = \sum_{i} \frac{1}{\left|\tder{f}{x}(x_i)\right|}\delta(x - x_i)	\tag*{Delta function Rule 5 } \\
+		& \oint_S \vc{E} \cdot \vc{n} \; da = \frac{1}{\eo} \int_V \rho(\vc{x}) d^3x	\tag*{Gauss' Law (1.11)} \\
+		& \vc{\nabla} \times \vc{E} = 0	\tag*{Curl of electric field (1.14)} \\
+		& \vc{E} = -\vc{\nabla} \Phi	\tag*{Electric field in terms of scalar potential (1.16)} \\
+		& \Phi(\vc{x}) = \K \int \frac{\rho (\vc{x}')}{|\vc{x} - \vc{x}'|} d^3 x' \tag*{Scalar potential in terms of charge density (1.17)} \\
+		& (\vc{E_2} - \vc{E_1}) \cdot \vc{n} = \sigma/\eo	\tag*{Electric field of a surface distribution (1.22)} \\
+		& \nabla^2 \Phi = -\rho/\eo	\tag*{Poisson Equation (1.28)}\\
+		& \nabla^2 \Phi = 0		\tag*{Laplace Equation (1.29)}\\
+		& G(\vc{x}, \vc{x}') = \frac{1}{|\vc{x} - \vc{x}'|} + F(\vc{x}, \vc{x}')	\tag*{Green's function for Poisson's equation (1.40)} \\
+		& \Phi(\vc{x}) = \K \int_V \rho(\vc{x}') G_D(\vc{x}, \vc{x}') d^3x' = \frac{1}{4 \pi} \oint_S(\vc{x}') \pder{G_D}{n'} da'	\tag*{DBCs (1.44)} \\
+		& \Phi(\vc{x}) = \langle\Phi\rangle_S + \K \int_V \rho(\vc{x}') G_N(\vc{x},\vc{x}') d^3x + \frac{1}{4 \pi} \oint_S \pder{\Phi}{n'} G_N da'	\tag*{NBCs (1.46)} \\
+		& W = \frac{\eo}{2} \int |\vc{\nabla} \Phi|^2 d^3x = \frac{\eo}{2} \int \left| \vc{E} \right|^2 d^3 x	\tag*{Energy stored in electric field (1.54)} \\
+		& q' = -\frac{a}{y} q, \quad y' = \frac{a^2}{y}		\tag*{Magnitude and position of image charge on sphere (2.4)} \\
+		& \Phi = -E_0 \left( r - \frac{a^3}{r^2} \right)	\tag*{Electric potential of conducting sphere in $\vect{E} = E_0 \zhat$ (2.14)} \\
+		& \frac{1}{|\vc{x} - \vc{x}'|} = 4 \pi \sum_{\ell = 0}^\infty \sum_{m = -\ell}^{\ell} \frac{1}{2 \ell +1} \frac{r_<^\ell}{r_>^{\ell +1}} Y_{\ell m}^*(\theta', \phi') Y_{\ell m}(\theta,\phi)	\tag*{GFE (3.70)} \\
+		&\text{Where $r_< (r_>)$ is the smaller (larger) of $|\vc{x}|$ and $|\vc{x}'|$} \\
+		& q = \int \rho(\vect{x}') \; d^3x'	\tag*{Monopole (4.4)} \\
+		& \vect{p} = \int \vect{x}' \rho(\vect{x}') \; d^3x'	\tag*{Dipole (4.8)} \\
+		& Q_{ij} = \int (3 x_i' x_j'- r' \delta_{ij})\rho(\vect{x}') d^3x'		\tag*{Quadrupole (4.9)} \\
 		&\Phi(\vect{x}) = \K \left[ \frac{q}{r} + \frac{ \vect{p} \cdot \vect{x}}{r^3} + \frac{1}{2} \sum_{i,j} Q_{ij} \frac{x_i x_j}{r^5} + ... \right] \tag*{Multipole Expansion (4.10)} \\
 		& E_r=\frac{2 p \cos \theta}{4 \pi \eo}, \quad E_\theta=\frac{2 p \sin \theta}{4 \pi \eo} \tag*{Dipole in $\zhat$ (4.12)} \\
 		& \vect{E}(\vect{x}) = \frac{3 \vect{n}(\vect{p} \cdot \vect{n}) - \vect{p}}{4 \pi \eo |\vect{x} - \vect{x}_0|^3} \tag*{$\vect{E}$-field due to dipole $\vect{p}$ (4.13)} \\
 		& W = \int \rho(\vect{x}) \Phi(\vect{x})\; d^3x \tag*{Charge in \textit{external} field (4.21)} \\
-		& W = q \Phi(0) - \vect{p} \cdot \vect{E}(0) - \frac{1}{6} \sum_i \sum_j Q_{ij} \pder{E_j}{x_i}(0) + ... \tag*{Energy multipole expansion (4.24)} \\
+		& W = q \Phi(0) - \vect{p} \cdot \vect{E}(0) - \frac{1}{6} \sum_i \sum_j Q_{ij} \pder{E_j}{x_i}(0) + ... \tag*{Work multipole expsn. (4.24)} \\
 		& \vect{P}(\vect{x}) = \sum_i N_i \ev{\vect{p}_i} \tag*{Electric polarization (4.28)} \\
 		& \vect{D} = \eo \vect{E} + \vect{P} \tag*{Electric displacement(4.34)} \\
 		& \vect{P} = \eo \chi_e \vect{E} \tag*{Induced polarization (4.36)} \\
@@ -98,23 +122,73 @@
 		& \epsilon = \eo (1 + \chi_e) \tag*{Electric permittivity (4.38)} \\
 		& \begin{cases}
 			(\vect{D}_2 - \vect{D}_1) \cdot \vect{n}_{21} = \sigma \\
-			(\vect{E}_2 - \vect{E}_1 \times \vect{n}_{21}) = 0 \\
+			(\vect{E}_2 - \vect{E}_1) \times \vect{n}_{21} = 0 \\
 		\end{cases}	\tag*{Boundary conditions (4.40)} \\
 		\begin{split}
 			&\Phi_{\text{in}} = - \left( \frac{3}{\epsilon/\eo + 2} \right) E_0 r \cos \theta \\ 
 			&\Phi_{\text{out}} = - E_0 r \cos \theta + \left( \frac{\epsilon/\eo - 1}{\epsilon/\eo + 2} \right) E_0 \frac{a^3}{r^2} \cos \theta 
-		\end{split} \tag*{Dielectric sphere in uniform $\vect{E}$-field (4.54)} \\
+		\end{split} \tag*{Dielectric sphere in $\vect{E} = E_0 \zhat$ (4.54)} \\
 		& W = \frac{1}{2} \int \vect{E} \cdot \vect{D} \; d^3x \tag*{Electrostatic Energy (4.89)} \\
-		& W = - \frac{1}{2} \int_{V_1} \vect{P} \cdot \vect{E}_0 \; d^3 x \tag*{Dielectric placed in $\vect{E}_0$ (4.93)} \\
+		& \Delta W = - \frac{1}{2} \int_{V_1} \vect{P} \cdot \vect{E}_0 \; d^3 x \tag*{Dielectric placed in $\vect{E}_0$ (4.93)} \\
 		& \vect{N} = \vect{\mu} \times \vect{B} \tag*{Torque on magnetic dipole moment (5.1)} \\
 		& \nabla \cdot \vect{J} = 0 \tag*{Condition of magnetostatics (5.3)} \\
 		& d \vect{B} = k I \frac{d \vect{l} \times \vect{x}}{|\vect{x}|^3} \tag*{Biot-Savart Law (5.4)} \\
 		& \vect{F} = \int \vect{J}(\vect{x}) \times \vect{B}(\vect{x}) \; d^3 x \tag*{Force on current dist. (5.12)} \\
 		& \vect{N} = \int \vect{x} \times (\vect{J} \times \vect{B}) \; d^3 x \tag*{Torque on current dist. (5.13)} \\
-		& \oint_C \vect{B} \cdot d \vect{l} = \mu_0 I \tag*{Amp\`eres law (5.25)}\\
+	\end{align*}
+	\begin{align*} 
+		& \oint_C \vect{B} \cdot d \vect{l} = \mu_0 I \tag*{Amp\`ere's law (5.25)}\\
 		& \vect{B}(\vect{x}) = \nabla \times \vect{A}(\vect{x}) \tag*{Magnetic vector potential (5.27)} \\
-		& \vect{A}(\vect{x}) = \frac{\mu_0}{4 \pi} \int \frac{\vect{J}(\vect{x}')}{|\vect{x}-\vect{x}'|} d^3 x' \tag*{MVP from current dist. (5.32)} \\
-	\end{align}
+		& \vect{A}(\vect{x}) = \frac{\mu_0}{4 \pi} \int \frac{\vect{J}(\vect{x}')}{|\vect{x}-\vect{x}'|} d^3 x' \tag*{MVP, current dist. (5.32)} \\
+		& \vect{m} = \frac{1}{2} \int \vect{x}' \times \vect{J}(\vect{x}') \; d^3 x \tag*{Magnetic moment def. (5.54)} \\
+		& \vect{A}(\vect{x}) = \frac{\mu_0}{4 \pi} \frac{\vect{m} \times \vect{x}}{|\vect{x}|^3} \tag*{Dipole vector potential (5.55)} \\
+		& \vect{B}(\vect{x}) = \frac{\mu_0}{4 \pi} \left[ \frac{3 \vect{n}(\vect{n} \cdot \vect{m}) - \vect{m}}{|\vect{x}|^3} \right]\tag*{Dipole induction (5.56)}\\
+		& \vect{m} = \frac{I}{2} \oint \vect{x} \times d \vect{l} \tag*{Mag. moment of closed circuit} \\
+		& |\vect{m}| = I \times (\text{Area}) \tag*{Moment of plane loop (5.57)} \\
+		& \vect{F} = \vect{\nabla(m \cdot B)} \tag*{Force on dipole (5.69)} \\
+		& \vect{M(x)} = \sum_i N_i \ev{\vect{m}_i} \tag*{Magnetization (5.76)} \\
+		& \vect{J}_M = \vect{\nabla \times M} \tag*{Bound current density (5.79)} \\
+		& \vect{H} = \frac{1}{\mu_0} \vect{B - M} \tag*{Magnetic field (5.81)} \\
+		\begin{split}
+			& \vect{\nabla \times H} = \vect{J}\\
+			& \vect{\nabla \cdot B} = 0\\
+		\end{split} \tag*{Macroscopic equations in matter (5.82)} \\
+		& \vect{B} = \mu \vect{H} \tag*{Linear condition (5.84)} \\
+		&\begin{cases}
+			(\vect{B}_2 - \vect{B}_1) \cdot \vect{n} = 0 \\
+			\vect{n} \times (\vect{H}_2 - \vect{H}_1) = \vect{K} \\ 
+		\end{cases} \tag*{Interface BC (5.86)} \\
+		& \vect{H} = -\vect{\nabla} \Phi_M \tag*{Magnetic scalar potential (5.93)} \\
+		& \nabla^2 \Phi_M = 0 \tag*{Magnetostatic Laplace Equation} \\
+		& \nabla^2 \Phi_M = - \rho_M \tag*{Magnetostatic Poisson Equation (5.95)} \\
+		& \rho_M = - \vect{\nabla \cdot M} \tag*{Effective magnetic charge density (5.96)} \\
+		& \Phi_M(\vect{x}) = \frac{\vect{m \cdot x}}{4 \pi r^3} \tag*{Mag. potential of dipole} \\
+		& \sigma_M = \vect{n \cdot M} \tag*{Effective magnetic surface-charge density (5.99)} \\
+		& \nabla^2 \vect{A} = -\mu_0 \vect{J}_M \tag*{Poisson equation for $\vect{A}$ (5.101)} \\
+		& \vect{A(x)} = \frac{\mu_0}{4 \pi} \int_V \frac{\vect{\nabla}' \times \vect{M}(\vect{x}')}{|\vect{x} - \vect{x}'|} \; d^3 x + \frac{\mu_0}{4 \pi} \oint_S \frac{\vect{M}(\vect{x}') \times \vect{n}'}{|\vect{x} - \vect{x}'|} \; da' \notag \\
+		& \vect{K}_M = \vect{M \times n} \tag*{Effective surface current} \\
+		& \Phi_M(r,\theta) = \frac{1}{3} M_0 a^2 \frac{r_<}{r_>^2} \cos \theta \tag*{Uniformly magnetized sphere (5.104)} \\
+		& \vect{M} = \frac{3}{\mu_0} \left( \frac{\mu - \mu_0}{\mu + 2 \mu_0} \right) \vect{B}_0 \tag*{Sphere in uniform field (5.115)} \\
+		& F = \int_S \vect{B \cdot n} \; da \tag*{Magnetic flux (5.133)} \\
+		& \mathscr{E} = \oint_C \vect{E}' \cdot d \vect{l} \tag*{Electromotive force (5.134)} \\
+		& \mathscr{E} = -k \tder{F}{t} \tag*{Faraday's Law (5.135)} \\
+		& W = \frac{1}{2} \int \vect{H \cdot B} \; d^3 x \tag*{Total magnetic energy (5.148)} \\
+		& W = \frac{1}{2} \int \vect{J \cdot A} \; d^3 x \tag*{Energy in terms of potential (5.149)} \\
+		& \Delta W = \frac{1}{2} \int_{V_1} \vect{M \cdot B}_0 \; d^3 x \tag*{Change in energy for placing object (5.150)} \\
+		& F_\xi = \left( \pder{W}{\xi} \right)_J \tag*{Generalized force (5.151)} \\
+		& W = \frac{1}{2} \sum_{i=1}^N L_i I_i^2 + \sum_{i=1}^N \sum_{j>i}^N M_{ij} I_i I_j \tag*{Inductive energy (5.152)} \\
+		& M_{ij} = \frac{1}{I_j} F_{ij} \tag*{Mutual inductance (5.156)} \\
+		& \tau = I \alpha = - \pder{W}{\theta} \tag*{Mechanical torque}\\
+ 	\end{align*}
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{| l | c | c |} \hline
+		& Wiggly & Decaying \\ \hline
+		$x,y,z$ &$ e^{\pm i k_n x}, \; A \cos(k_n x) + B\sin(k_n x)$ & $e^{\pm k_n x}, \; A \cosh( k_n x) + B \sinh(k_n x)$ \\ \hline
+		$\rho,\phi,z$ & $e^{i m \phi}, \; A J_m(k_n \rho) + B Y_m(k_n \rho)$ & $ A I_m(k_n \rho) + B K_m(k_n \rho)$ \\ \hline
+		$\rho,\phi$ & $e^{i m \phi}$ & $A_0 + B_0 \ln \rho + \sum A_m \rho^m + B_m \rho^{-m}$ \\ \hline
+		$r,\theta$ & $P_\ell(\cos \theta)$ & $A \left( \frac{r}{a} \right)^\ell + B \big( \frac{r}{a} \big)^{-(\ell+1)} $ \\ \hline
+		$r, \theta, \phi$ & $Y_{\ell m}(\theta, \phi)$ &  $A \left( \frac{r}{a} \right)^\ell + B \big( \frac{r}{a} \big)^{-(\ell+1)} $ \\ \hline
+	\end{tabular}
 \end{multicols}
 % --------------------------------------------------------------
 %     You don't have to mess with anything below this line.
