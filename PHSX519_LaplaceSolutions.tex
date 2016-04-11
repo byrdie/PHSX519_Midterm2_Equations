@@ -1,0 +1,124 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[10pt]{article}
+ 
+\usepackage[margin=.3in, voffset=.3in, ]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, mathtools}
+\usepackage{multicol}
+\usepackage[subnum]{cases}
+\usepackage{relsize}
+\usepackage[makeroom]{cancel}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{calligra}
+\usepackage[normalem]{ulem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{bbold}
+
+
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n} 
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+
+
+% Makes '\sr' make a script r
+\newcommand{\sr}{\ensuremath{\mathcalligra{r}}}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\ihat}{\boldsymbol{\hat{\textbf{\i}}}}
+\newcommand{\jhat}{\boldsymbol{\hat{\textbf{\j}}}}
+\newcommand{\khat}{\boldsymbol{\hat{\textbf{k}}}}
+\newcommand{\rhat}{\boldsymbol{\hat{\textbf{r}}}}
+\newcommand{\srhat}{\boldsymbol{\hat{\textbf{\sr}}}}
+\newcommand{\xhat}{\boldsymbol{\hat{\textbf{x}}}}
+\newcommand{\yhat}{\boldsymbol{\hat{\textbf{y}}}}
+\newcommand{\zhat}{\boldsymbol{\hat{\textbf{z}}}}
+\newcommand{\nhat}{\boldsymbol{\hat{\textbf{n}}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\textbf{$\phi$}}}}
+
+\newcommand{\ve}[1]{\boldsymbol{\mathbf{#1}}}
+\newcommand{\vect}[1]{\boldsymbol{\mathbf{#1}}}
+\newcommand{\vc}[1]{\mathbf{#1}}
+\newcommand{\fracl}[2]{\mathlarger{\frac{#1}{#2}}}
+\newcommand{\dd}{\, \mathrm{d}}
+\newcommand{\eo}{\epsilon_0}
+\newcommand{\mo}{\mu_\circ}
+\newcommand{\tder}[2]{\frac{\dd #1}{\dd #2}}
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\dtder}[2]{\frac{\dd^2 #1}{\dd #2^2}}
+\newcommand{\ttder}[2]{\frac{\dd^3 #1}{\dd #2^3}}
+\newcommand{\dpder}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\tpder}[2]{\frac{\partial^3 #1}{\partial #2^3}}
+\newcommand{\intas}{ \int_{-\infty}^\infty}
+\newcommand{\wt}[1]{\widetilde{#1}}
+\newcommand{\ev}[1]{\left\langle #1 \right\rangle}
+\newcommand{\ce}{\wt{\vect{E}}}
+\newcommand{\cb}{\wt{\vect{B}}}
+\newcommand{\K}{\frac{1}{4 \pi \eo}}
+\newcommand{\lrp}[1]{\left[( #1 \right)}
+\newcommand{\lrb}[1]{\left[ #1 \right]}
+\newcommand{\lrc}[1]{\left\{ #1 \right\}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+\pagenumbering{gobble}
+
+\pagestyle{fancy}
+\lhead{Compedium of solutions to Laplace's equation}
+\chead{PHSX519 Electromagnetic Theory I}
+\rhead{Roy Smart}
+
+
+ 
+\begin{document}
+
+\section{List of solutions to Laplace's Equation}
+
+\begin{enumerate}
+	\item Cartesian Coordinates
+	\item Cylindrical Coordinates
+	\begin{enumerate}
+		\item $z$-independent
+		\begin{enumerate}
+			\item $\rho$-periodic
+			\item $\rho$-decaying
+			\begin{enumerate}
+				\item $\phi$-independent, $\ve{K} = \ve{0}$
+					\begin{align}
+						& \Phi(\rho, \phi) = A + B \ln(\rho)
+						& 
+					\end{align}
+				\item $\phi$-periodic, $\ve{K} = K_0 \sin(n \phi + \alpha_n)$
+			\end{enumerate}
+		\end{enumerate}
+		\item $z$-periodic
+		\item $z$-decaying		
+	\end{enumerate}
+	\item Spherical Coordinates
+\end{enumerate}
+
+\section{Linear Combinations}
+
+\end{document}

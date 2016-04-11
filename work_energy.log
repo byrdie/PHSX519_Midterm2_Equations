@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.28)  10 APR 2016 21:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.28)  11 APR 2016 13:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**PHSX519_Midterm2_Equations.tex
-(./PHSX519_Midterm2_Equations.tex
+**work_energy.tex
+(./work_energy.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -319,9 +319,8 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 (/usr/share/texlive/texmf-dist/tex/latex/bbold/bbold.sty
 Package: bbold 1994/04/06 Bbold symbol package
 LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
-)
-(./PHSX519_Midterm2_Equations.aux)
-\openout1 = `PHSX519_Midterm2_Equations.aux'.
+) (./work_energy.aux)
+\openout1 = `work_energy.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
 LaTeX Font Info:    ... okay on input line 95.
@@ -429,49 +428,45 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 102.
+LaTeX Font Info:    Try loading font information for U+msa on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 102.
+LaTeX Font Info:    Try loading font information for U+msb on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 102.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Try loading font information for U+bbold on input line 152.
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [1{/var/lib/texmf/fon
-ts/map/pdftex/updmap/pdftex.map}
-
-] (./PHSX519_Midterm2_Equations.aux) ) 
+] (./work_energy.aux) ) 
 Here is how much of TeX's memory you used:
- 5416 strings out of 493304
- 79271 string characters out of 6139871
- 296347 words of memory out of 5000000
- 8773 multiletter control sequences out of 15000+600000
- 5654 words of font info for 23 fonts, out of 8000000 for 9000
+ 5448 strings out of 493304
+ 79305 string characters out of 6139871
+ 158347 words of memory out of 5000000
+ 8792 multiletter control sequences out of 15000+600000
+ 11654 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,18n,43p,304b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type
-1/public/bbold-type1/bbold5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cmextra/cmbsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs5.pfb>
-Output written on PHSX519_Midterm2_Equations.pdf (1 page, 112385 bytes).
+ 38i,12n,43p,244b,202s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on work_energy.pdf (1 page, 94146 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
