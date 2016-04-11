@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.1)  11 APR 2016 15:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.17)  11 APR 2016 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -444,77 +444,9 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 104.
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Overfull \vbox (35.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (34.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (33.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (32.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (31.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (30.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (29.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (28.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (27.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (26.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (25.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (24.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (23.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (22.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (21.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (20.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (19.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (18.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (17.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (16.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (15.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (14.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (13.30621pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (12.30621pt too high) has occurred while \output is active []
-
+Overfull \hbox (6.7827pt too wide) in paragraph at lines 264--264
+[] 
+ []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -522,8 +454,8 @@ Overfull \vbox (12.30621pt too high) has occurred while \output is active []
 (./PHSX519_Midterm2_Equations.aux) ) 
 Here is how much of TeX's memory you used:
  5410 strings out of 493304
- 79050 string characters out of 6139872
- 343375 words of memory out of 5000000
+ 79050 string characters out of 6139871
+ 351374 words of memory out of 5000000
  8772 multiletter control sequences out of 15000+600000
  5471 words of font info for 22 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -537,7 +469,7 @@ mextra/cmmib5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs5.pfb>
-Output written on PHSX519_Midterm2_Equations.pdf (1 page, 119326 bytes).
+Output written on PHSX519_Midterm2_Equations.pdf (1 page, 120411 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream

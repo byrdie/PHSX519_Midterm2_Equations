@@ -63,7 +63,7 @@
 \newcommand{\ce}{\wt{\vect{E}}}
 \newcommand{\cb}{\wt{\vect{B}}}
 \newcommand{\K}{\frac{1}{4 \pi \eo}}
-\newcommand{\lrp}[1]{\left[( #1 \right)}
+\newcommand{\lrp}[1]{\left( #1 \right)}
 \newcommand{\lrb}[1]{\left[ #1 \right]}
 \newcommand{\lrc}[1]{\left\{ #1 \right\}}
  
@@ -256,7 +256,11 @@
 			\rhat \\
 			\thetahat \\
 			\phihat
- 		\end{pmatrix}
+ 		\end{pmatrix} \\
+ 		& \Phi_i(r,\theta. \phi) = \lrb{A_i r^l + B_i^{-(l+1)}} P_l(\cos \theta), \quad
+ 		\ve{K} = -\frac{K_0}{\sin \theta} \lrb{\cos \theta P_l(\cos \theta) - P_{l+1}(\cos \theta)}  \phihat \\
+ 		& B_{I} = \lrp{\frac{1}{l \mu_{II} + (l+1) \mu_I}} \lrb{A_I a^{2l+1}(\mu_I - \mu_{II}) + K_0 l a^{l+2} \mu_{II} + B_{II} (2 l + 1) \mu_{II}} \\
+ 		& A_{II} = \lrp{\frac{a^{-(2l +1)}}{l \mu_{II} + (l+1) \mu_I}} \lrb{B_{II} (l+1) (\mu_{II} - \mu_I) + A_I (2l+1) \mu_I a^{2l+1} - K_0 (l+1) \mu_I a^{l+2}}
  	\end{align*}
 	\renewcommand{\arraystretch}{2}
 	\begin{tabular}{| l | c | c |} \hline
